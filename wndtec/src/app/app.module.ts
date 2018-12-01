@@ -1,7 +1,8 @@
 import { AppRoutingModule } from "./app-routing.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+// RECOMMENDED
+import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
@@ -23,7 +24,7 @@ import { ContactComponent } from "./components/contact/contact.component";
     AboutComponent,
     ContactComponent
   ],
-  imports: [BrowserModule, NgbModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BsDropdownModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
 })

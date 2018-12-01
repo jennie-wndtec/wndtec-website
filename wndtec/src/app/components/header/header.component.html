@@ -1,27 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top navbar__content" ngbDropdown>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-    aria-expanded="false" aria-label="Toggle navigation" ngbDropdownToggle>
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse" id="navbarNavDropdown" ngbDropdownMenu>
-    <ul class="navbar-nav">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top navbar__content">
+
+  <div class="btn-group main-menu__dropdown" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle" aria-controls="dropdown-basic">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
       <li class="nav-item active">
-        <a class="nav-link pl-3 pr-3" routerLink="portfolio">Portfolio <span class="sr-only">(current)</span></a>
+        <a class="nav-link pl-3 pr-3" routerLinkActive="active-link" routerLink="portfolio">Portfolio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link pl-3 pr-3" routerLink="frontend">Frontend</a>
+        <a class="nav-link pl-3 pr-3" routerLinkActive="active-link" routerLink="frontend">Frontend</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link pl-3 pr-3" routerLink="backend">Backend</a>
+        <a class="nav-link pl-3 pr-3" routerLinkActive="active-link" routerLink="backend">Backend</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link pl-3 pr-3" routerLink="about">Om oss</a>
+        <a class="nav-link pl-3 pr-3" routerLinkActive="active-link" routerLink="about">Om oss</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link pl-3 pr-3" routerLink="contact">Kontakt</a>
+        <a class="nav-link pl-3 pr-3" routerLinkActive="active-link" routerLink="contact">Kontakt</a>
       </li>
     </ul>
   </div>
-
   <span class="navbar__content__text">Wndtec</span>
 </nav>

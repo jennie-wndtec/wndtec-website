@@ -32,12 +32,18 @@
 
 
 .dropdown-toggle {
-  position: relative;
-  top: -66px;
-
   &::after {
     content: none;
   }
+}
+
+.main-menu__dropdown {
+  position: relative;
+  top: -66px;
+}
+
+.active-link {
+  color: #0c1b33;
 }
 
 .content__label__logo {
